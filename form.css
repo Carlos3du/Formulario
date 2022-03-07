@@ -6,13 +6,13 @@
 #titulo{
     font-family: sans-serif;
     color: #380b61;
-    margin-left: 7%;
+    margin-left: 0%;
 }
 
 #subtitulo{
     font-family: sans-serif;
     color: #380b61;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 fieldset {
@@ -29,7 +29,7 @@ body{
     justify-content: center;
 }
 
-imput, select, textarea, button{
+input, select, textarea, button{
 border-radius: 5px;
 }
 
@@ -68,16 +68,16 @@ fieldset .grupo .campo{
     font-size: 1.2em;
     background: #59429d;
     border: 0;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px  rgba(0,0,0,0.5);
-    position: absolute;
-    top:90%;
-    left:50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 80%;
+    left: 15%;
+    margin-right: 50%;
+    
 }
 
 .botao:hover{
