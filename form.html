@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleshit" type="text/css" href="form.css" media="screen">
     <title>Cadastro</title>
 </head>
 
 <body>
     <div>
-        <h1>Cadastro do cliente</h1>
-        <p>Complete suas informações</p>
+        <h1 id="titulo">Cadastro de desenvolvedores</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
     </div>
 
-<form>
-<fieldset>
-    <div>
-        <label>Nome</label> 
-        <input type = "text" name  ="nome" id = "nome"></input> 
-    </div>
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
 
-    <div>
-        <label>Sobrenome</label>
-        <input type = "text" name= "sobrenome" id="sobrenome"></input>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+    </fieldset>
+
+        <div class="campo">
+<label><strong>Qual área você se especializou?</strong></label>
+<label>
+    <input type="radio" name="areaweb" value="frontend">Front-end
+</label>
+<label>
+    <input  type="radio" name="areaweb" value="backend">Back-end
+</label>
+<label>
+    <input type="radio" name="areaweb" value="fullstack">Fullstack
+</label>
+        </div>
+
+<div class="campo">
+    <label for="senioridade"><strong>Senioridade</strong></label>
+    <select>
+        <option selected disabled value="">Selecione</option> 
+        <option>Junior</option>
+        <option>Pleno</option>
+        <option>Senior</option>
+    </select>
+</div><br><br>
+
+<fieldset class="grupo">
+    <div id="check">
+        <label><strong>Selecione as linguagens que tem domínio:</strong></label><br><br>
+        <input type="checkbox" id="ling1" name="ling1" value="HTML">
+        <label for="ling1">HTML</label>
+        <input type="checkbox" ind="ling2" name="ling2" value="Java">
+        <label for="ling2">Java</label>
+        <input type="checkbox" id="ling3" name="ling3" value="Python">
+        <label for="ling3">Python</label>
+        <input type="checkbox" id="ling4" name="ling4" value="CSS">
+        <label for="ling4">CSS</label>
+        <input type="checkbox" id="ling5" name="ling5" value="PHP">
+        <label for="ling5">PHP</label>
+        <input type="checkbox" id="ling6" name="ling6" value="C#">
+        <label for="ling6">C#</label>
     </div>
 </fieldset>
-
-<div>
-<label>Email</label>
-<input type = "email" name = "email" id ="email"></input>
+<div class="campo">
+    <br>
+    <label><strong>Conte um pouco sobre sua experiência no mercado de trabalho:</strong></label><br>
+    <textarea row="6" style="width: 26em" id="exp" nome="exp"></textarea>
 </div>
-</form>
+<button class="botao" type="submit">Concluído</button>
+
+    </form>
 
 </body>
 </html>
